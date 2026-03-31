@@ -37,8 +37,6 @@ Add to your project `.claude/settings.json` or global `~/.claude/settings.json`:
 <emoji> <type>(<scope>): <short description>
 ```
 
-### Emoji mapping
-
 | Type | Emoji | Type | Emoji |
 |------|-------|------|-------|
 | feat | ✨ | chore | 🔧 |
@@ -50,6 +48,20 @@ Add to your project `.claude/settings.json` or global `~/.claude/settings.json`:
 | test | ✅ | remove | 🔥 |
 | build | 📦 | move | 🚚 |
 | ci | 👷 | release | 🔖 |
+
+## Related Work
+
+Compared with the built-in `/commit` command in Claude Code:
+
+| Feature | `/commit` (built-in) | `/cmt` (this plugin) |
+|---------|---------------------|----------------------|
+| Gitmoji prefix | ❌ Not supported | ✅ 20+ types auto-mapped |
+| Conventional Commits | ❌ Free-form, no enforced spec | ✅ Strict v1.0.0 compliance |
+| Scope annotation | ❌ Not required | ✅ Always annotates change scope |
+| GPG signing | ❌ Not supported | ✅ Optional, pass passphrase to enable |
+| GPG agent warm-up | ❌ N/A | ✅ Auto warm-up, no interactive prompt |
+| Co-Authored-By tag | ⚠️ Always added | ❌ Not added, cleaner commit history |
+| Commit format consistency | ⚠️ Model-dependent, style may drift | ✅ Fixed template `<emoji> <type>(<scope>): <desc>` |
 
 ## License
 
