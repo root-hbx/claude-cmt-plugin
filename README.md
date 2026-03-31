@@ -16,7 +16,7 @@ Add to your project `.claude/settings.json` or global `~/.claude/settings.json`:
 ```json
 {
   "plugins": [
-    "https://github.com/yourname/claude-cmt-plugin"
+    "https://github.com/root-hbx/claude-cmt-plugin"
   ]
 }
 ```
