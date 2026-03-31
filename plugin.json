@@ -1,0 +1,6 @@
+{
+  "name": "cmt",
+  "description": "GPG-signed conventional commits with gitmoji — auto-analyse changes and commit",
+  "version": "1.0.0",
+  "skills": ["skills/cmt.md"]
+}
